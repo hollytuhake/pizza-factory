@@ -20,11 +20,11 @@ console.log(pizza2);
 
 console.log(orderArray);
 
-function orderTracker(orderArray){
+function Order(...orderArray){
     for (i=0;i<orderArray.length;i+=1){
         orderCost = (orderCost + 10.99 + .99 * orderArray[i].toppings.length)*TAX_RATE;
     }
     console.log(orderCost);
 }
 
-orderTracker(orderArray);
+order1 = new Order(pizza1, pizza2);
